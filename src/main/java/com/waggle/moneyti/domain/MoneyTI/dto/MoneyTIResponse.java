@@ -11,9 +11,12 @@ import lombok.NoArgsConstructor;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Schema(description = "게시글 작성 결과 DTO")
+@Schema(description = "MoneyTI 검사 결과 및 gpt 추천 정보 DTO")
 public class MoneyTIResponse {
+
+    @Schema(description = "MoneyTI 검사 결과", example = "BTS")
     private String moneyTI;
 
+    @Schema(description = "MoneyTI ChatGPT 추천 데이터")
     private ChatResultResponse recommendData;
 }
