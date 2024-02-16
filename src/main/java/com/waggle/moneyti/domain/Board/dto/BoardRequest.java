@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Schema(description = "게시글 작성 DTO")
 public class BoardRequest {
 
-    @Schema(description = "MoneyTIType 유형", example = "YOLO")
+    @Schema(description = "MoneyTIType 유형", example = "BTS")
     private String moneyTI;
 
     @Schema(description = "내용")

@@ -44,7 +44,7 @@ public class BoardResponse {
         @Schema(description = "게시글 내용")
         private String content;
 
-        @Schema(description = "MoneyTIType 유형")
+        @Schema(description = "MoneyTI 유형")
         private String moneyTI;
     }
 
