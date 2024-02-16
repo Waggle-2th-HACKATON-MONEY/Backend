@@ -18,5 +18,5 @@ public class MoneyTIResponse {
     private String moneyTI;
 
     @Schema(description = "MoneyTI ChatGPT 추천 데이터")
-    private ChatResultResponse recommendData;
+    private ChatResultResponse gptRecommend;
 }
