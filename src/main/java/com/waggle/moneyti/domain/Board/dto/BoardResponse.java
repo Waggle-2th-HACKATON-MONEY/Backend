@@ -2,6 +2,7 @@ package com.waggle.moneyti.domain.Board.dto;
 
 import com.waggle.moneyti.domain.Board.Board;
 import com.waggle.moneyti.domain.enums.MoneyTI;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,8 +16,13 @@ public class BoardResponse {
     @Getter
     @AllArgsConstructor
     @NoArgsConstructor
+    @Schema(description = "게시글 작성 결과 DTO")
     public static class BoardPost {
+
+        @Schema(description = "게시글 Id")
         private Long id;
+
+        @Schema(description = "게시글 생성 시간")
         private LocalDateTime createdAt;
     }
 
@@ -31,8 +37,13 @@ public class BoardResponse {
     @Getter
     @AllArgsConstructor
     @NoArgsConstructor
+    @Schema(description = "게시글 목록 조회")
     public static class BoardList {
+
+        @Schema(description = "게시글 내용")
         private String content;
+
+        @Schema(description = "MoneyTI 유형")
         private String moneyti;
     }
 
